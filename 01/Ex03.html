@@ -6,3 +6,29 @@ Exemplo de saída:
     Preço: R$ 60.00
     À vista: R$ 54.00
     Ou 3x de: R$ 20.00 -->
+
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Primeira página Javascript =)</title>
+</head>
+
+<body>
+    <h1>Exercício 03</h1>
+    <script>
+        var valorPagamento = Number(prompt("Qual é o valor do pagamento:"));
+
+        var pagamentoVista = (valorPagamento - (valorPagamento * 10 / 100));
+
+        var pagamento3Vezes = (valorPagamento / 3);
+
+        console.log("Preço: R$ " + valorPagamento);
+        console.log("À vista: R$ " + pagamentoVista);
+        console.log("Ou 3x de: R$ " + (pagamento3Vezes).toFixed(2));
+    </script>
+</body>
+
+</html>

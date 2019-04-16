@@ -6,3 +6,36 @@ Depois disso  calcule e mostre no console:
 a) O valor dos 10% (cota do garçom)
 b) O valor final da conta (consumo + 10%)
 c) O valor que cada cliente deve pagar -->
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Primeira página Javascript =)</title>
+</head>
+
+<body>
+    <h1>Exercício 02</h1>
+    <script>
+        var valorConsumo = Number(prompt("Qual é o valor do consumo:"));
+        var numClientes = Number(prompt("Qual é o número de clientes:"));
+
+        console.log("O valor consumido é: " + valorConsumo);
+
+        //Exercício A -
+        var cotaGarcom = (10 % valorConsumo);
+        console.log("O valor dos 10% é: " + cotaGarcom);
+
+        //Exercício B -
+        var valorFinal = valorConsumo + cotaGarcom;
+        console.log("O valor final da conta é: " + valorFinal);
+
+        //Exercício C -
+        var divisaoConta = valorFinal / numClientes;
+        console.log("Vocês estão em " + numClientes + " pessoas e o valor por pessoa é " + (divisaoConta).toFixed(2));
+
+    </script>
+</body>
+
+</html>

@@ -1,2 +1,30 @@
 <!-- Elabore um progrma que receba duas notas de um aluno e 
     calcule a média -->
+
+
+<!Doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Primeira página Javascript =)</title>
+</head>
+
+<body>
+    <h1>Exercício 04</h1>
+    <script>
+
+        var notaUm = Number(prompt("Qual é a nota um:"));
+        var notaDois = Number(prompt("Qual é a nota dois:"));
+        function mediaAluno(notaUm, notaDois) {
+            var media = (notaUm + notaDois) / 2
+            console.log("Nota Um:  " + notaUm);
+            console.log("Nota Dois " + notaDois);
+            console.log("Média: " + (media).toFixed(1));
+        }
+        mediaAluno(notaUm, notaDois);
+    </script>
+</body>
+
+</html>
