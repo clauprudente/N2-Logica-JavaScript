@@ -1,16 +1,13 @@
 var mensagem = document.querySelector('.login__subtitle');
 
+var botao = document.querySelector('.button.login__button');
 
-
-var botao = document.querySelector('.button.login__button')
 botao.addEventListener('click', function (evento) {
     evento.preventDefault();
     var email = document.querySelector('#loginInputEmail');
 
-
     if (email.value == "" || email.value.length == 0) {
         mensagem.textContent = 'Digite um email'
-
     }
     else if (email.value.indexOf('@') <= 0 || email.value.indexOf('@') == email.value.length - 1) {
         mensagem.textContent = 'Não é um e-mail válido'
